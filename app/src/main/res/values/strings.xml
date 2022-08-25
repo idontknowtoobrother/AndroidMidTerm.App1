@@ -3,4 +3,5 @@
     <string name="profile_image_description">Jakkrit</string>
     <string name="myname_label">Jakkrit Chaopron</string>
     <string name="student_id_label">62160246</string>
+    <string name="hello_btn_label">hello</string>
 </resources>
