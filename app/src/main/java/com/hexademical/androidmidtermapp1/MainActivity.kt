@@ -1,5 +1,6 @@
 package com.hexademical.androidmidtermapp1
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity() {
             val fullName:TextView = findViewById(R.id.full_name)
             val studentID:TextView = findViewById(R.id.student_id)
             Log.d(TAG, "Full Name: ${fullName.text} | Stuident ID: ${studentID.text}" )
+
+            val Intent = Intent(this, HelloActivity::class.java)
+            Intent.putExtra("full_name", fullName.text)
+            startActivity(Intent)
         }
     }
 }
